@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@500&display=swap');
+
+/* //font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav div img {
+    width: 180px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+nav div button {
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display:none;
+}
+
+.btn1 {
+    background-color: #4BA87D;
+    color: white;
+    font-family:'Raleway', sans-serif;
+    text-transform:uppercase;
+    border:none;
+    font-weight:bold;
+    letter-spacing: 0.80px;
+    padding: 10px 15px;
+    border:3px solid #4BA87D;
+
+}
+
+.btn-grande {
+    padding: 13px 30px !important;
+}
+
+.btn2 {
+    background-color: transparent;
+    color: #4BA87D;
+    font-family:'Raleway', sans-serif;
+    text-transform:uppercase;
+    border:3px solid #4BA87D;
+    font-weight:bold;
+    letter-spacing: 0.80px;
+    padding: 10px 15px;
+}
+
+section {
+    margin-top: 20px;
+}
+section img {
+    width:340px;
+    height:169px;
+    margin: 25px 0px 0px 0px;
+    object-fit: cover;
+    
+
+}
+
+section h1 {
+    top: 5%;
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    font-weight:bold;
+    color:#000000;
+    font-size:36px;
+    line-height: 46px;
+    white-space: pre;
+    text-transform:capitalize;
+}
+
+section p {
+    font-family: 'Raleway', sans-serif;
+    font-size:medium;
+    line-height:16px;
+    text-align:left;
+    margin-left:4px;
+    margin-bottom:20px;
+}
+
+section p::first-letter {
+    text-transform:uppercase;
+}
+section .btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin:8px;
+}
+
+/* Buscar tamaño de h1 en Figma. darle text uppercase y achicar el tamaño del width y padding para que queden en los tamaños del figma.
+contenedor de bottones display flex y justify content  space between. AL div de h1 darle position absolute queda. Terminar pantallita que estoy haciendo y hacer la de reach more customers*/
+
+.reach-customers {
+    position:relative;
+}
+/* .reach-customers div {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+} */
+
+.reach-customers h1 {
+    color:white;
+    font-size:24px;
+}
+
+.reach-customers .learnhow {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.reach-customers .learnhow button {
+    width:90px;
+    height:10px;
+    font-size:8px;
+    line-height: 1px;
+    background-color: white;
+    border:1px solid white;
+    margin: 0 auto;
+}
+
+/* No me salio que me quede en el medio learn how */
+
+.section-engaging {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image:url(./Assets/imagenes/Slanted\ Green\ BG.png);
+    width: 360px;
+    height:740px;
+}
+.section-engaging div h1 {
+  position:static;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* Dudas: cuando haces position absolute como subir y bajar las cosas sin usar tanto top left o right. Porque el color de la letra está distinto al fondo que deberia ser siendo que esta con el mismo color.
+Como hacer para que la letra este mas gruesa. */

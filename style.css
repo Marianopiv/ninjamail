@@ -2,10 +2,17 @@
 
 /* //font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif; */
+
+body {
+    margin: 0;
+    padding: 0;
+}
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width:100%;
+    padding: 5px 0;
     
 }
 
@@ -16,7 +23,7 @@ nav div img {
 }
 
 nav div button {
-    margin-bottom: 20px;
+    margin: 0 10px 24px 0;
 }
 
 .btn-group {
@@ -54,16 +61,19 @@ nav div button {
 section {
     margin-top: 20px;
 }
-section img {
-    width:340px;
-    height:169px;
+#sec-1 img, .reach-customers img {
+    width:100%;
+    height:170px;
     margin: 25px 0px 0px 0px;
     object-fit: cover;
     
 
 }
 
-section h1 {
+#sec-1 {
+    margin: 40px auto;
+}
+#sec-1 h1 {
     top: 5%;
     position: absolute;
     font-family: 'Playfair Display', serif;
@@ -71,7 +81,7 @@ section h1 {
     color:#000000;
     font-size:36px;
     line-height: 46px;
-    white-space: pre;
+    padding: 0 70px 0 0;
     text-transform:capitalize;
 }
 
@@ -109,40 +119,99 @@ contenedor de bottones display flex y justify content  space between. AL div de 
 
 .reach-customers h1 {
     color:white;
-    font-size:24px;
+    font-size:30px;
+    text-transform: capitalize;
+    text-align:center;
 }
 
-.reach-customers .learnhow {
+.learnhow {
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
+    width:100%;
 }
-.reach-customers .learnhow button {
-    width:90px;
-    height:10px;
-    font-size:8px;
+.learnhow button {
+    font-size:10px;
     line-height: 1px;
     background-color: white;
     border:1px solid white;
     margin: 0 auto;
+    display:flex;
+    padding: 12px 10px;;
 }
 
 /* No me salio que me quede en el medio learn how */
 
 .section-engaging {
     display:flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction:column;
     background-image:url(./Assets/imagenes/Slanted\ Green\ BG.png);
     width: 360px;
     height:740px;
+    position:relative;
 }
-.section-engaging div h1 {
-  position:static;
-  margin: 0;
-  width: 100px;
-  height: 100px;
+
+
+.card {
+    width:210px;
+    overflow:hidden;
+}
+
+.card img {
+    width: 100%;
+    margin:0;
+
+}
+
+.card p {
+    margin:0 ;
+}
+
+.card-body {
+    background-color: white;
+    margin-top: -4px;
+    padding: 20px;
+}
+
+#learn-more-1 {
+    display:flex;
+    justify-content:start;
+    margin-bottom: 30px;
+}
+
+#learn-more-2 {
+    display:flex;
+    justify-content:end;
+}
+
+.learn-more-button {
+    background-color: transparent;
+    border: none;
+    color: #4BA87D;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin: 20px 0;
+}
+
+.learn-more-text-container {
+    width: 100%;
+    justify-content: center;
+    display:flex;
+}
+
+
+.learn-more-text {
+    width:230px;
+}
+
+
+.learn-more-text h1 {
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    font-weight:bold;
+    text-align:center;
 }
 
 /* Dudas: cuando haces position absolute como subir y bajar las cosas sin usar tanto top left o right. Porque el color de la letra está distinto al fondo que deberia ser siendo que esta con el mismo color.

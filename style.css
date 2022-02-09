@@ -16,14 +16,20 @@ nav {
     
 }
 
-nav div img {
+nav div {
     width: 180px;
     justify-content: center;
     margin: 0 auto;
 }
 
+nav div img {
+    width: 160%;
+}
+
 nav div button {
     margin: 0 10px 24px 0;
+    font-size:12px;
+    
 }
 
 .btn-group {
@@ -35,10 +41,9 @@ nav div button {
     color: white;
     font-family:'Raleway', sans-serif;
     text-transform:uppercase;
-    border:none;
     font-weight:bold;
     letter-spacing: 0.80px;
-    padding: 10px 15px;
+    padding: 7px 7px;
     border:3px solid #4BA87D;
 
 }
@@ -148,7 +153,6 @@ contenedor de bottones display flex y justify content  space between. AL div de 
     flex-direction:column;
     background-image:url(./Assets/imagenes/Slanted\ Green\ BG.png);
     width: 360px;
-    height:740px;
     position:relative;
 }
 
@@ -197,22 +201,99 @@ contenedor de bottones display flex y justify content  space between. AL div de 
 
 .learn-more-text-container {
     width: 100%;
-    justify-content: center;
+    margin-left:8%;
+    justify-content: left;
+    text-align: left;
     display:flex;
 }
 
 
 .learn-more-text {
     width:230px;
+    margin-left:10px;
 }
 
 
 .learn-more-text h1 {
+    padding-left:2px;
+    text-align: left;
     font-size: 28px;
     font-family: 'Playfair Display', serif;
     font-weight:bold;
-    text-align:center;
 }
 
-/* Dudas: cuando haces position absolute como subir y bajar las cosas sin usar tanto top left o right. Porque el color de la letra está distinto al fondo que deberia ser siendo que esta con el mismo color.
-Como hacer para que la letra este mas gruesa. */
+.learn-more-text p {
+    line-height:1.2;
+}
+
+
+
+/* Clase 6-2. Seguir con prox seccion, un div global, de seccion y adentro cada sdiv tiene una imagen,  */
+
+.global-members-email {
+    margin-top:10%;
+}
+
+.members {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:10%;
+    
+}
+.members img {
+    max-width:80%;
+}
+
+.members .user{
+    position:relative;
+    margin-bottom: 14px;
+}
+
+.global-members-email .members .user .description {
+    position:absolute;
+    color:white;  
+    top:60%;
+    left:10%;
+}
+.global-members-email .members .user .description h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size:22px;
+    font-weight:bold;
+    line-height:6px;
+    letter-spacing: 2px;
+}
+
+.global-members-email .members .user .description p {
+    text-align: left;
+    margin:0;
+}
+
+.join-list {
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+}
+.join-list h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight:bold;
+    padding: 15px 35px 8px 33px;
+    letter-spacing: 2px;
+    margin-bottom:10px;
+}
+
+
+.join-list p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size:12px;
+    color:#4BA87D;
+}
+
+.join-list input {
+    width:223px;
+    padding: 8px 0;
+    border-radius:8px black;
+    
+}

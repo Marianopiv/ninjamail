@@ -294,6 +294,28 @@ contenedor de bottones display flex y justify content  space between. AL div de 
 .join-list input {
     width:223px;
     padding: 8px 0;
-    border-radius:8px black;
+    border-radius:8px;
+    border: 1px solid gray;
     
+}
+
+.publicidad-empresas {
+    margin:0 auto;
+}
+.publicidad-empresas .container-titulo h1 {
+    text-align:center;
+    font-size:36px;
+}
+
+.container-empresas {
+    display:grid;
+    grid-template-areas:"a a";
+
+}
+
+.container-empresas img {
+    grid-column:1;
+    width:25px;
+    height:25px;
+
 }

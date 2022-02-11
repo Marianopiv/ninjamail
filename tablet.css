@@ -1,0 +1,59 @@
+@media(min-width:700px) {
+
+ nav {
+     display:flex;
+     justify-content: flex-end;
+     margin-top:6px;
+     align-items:flex-end;
+  
+    }
+
+ nav div{
+     display: flex;
+     margin:0;
+     width:100%;
+ }
+
+ .logo-container {
+     justify-content: left;
+     max-width: 173px;
+ }
+
+ .btn1-container {
+     justify-content: flex-end;
+     width:50%;
+ }
+
+ .btn1 {
+    padding: 2px 5px
+ }
+ .btn-group {
+     display:flex;
+     justify-content: flex-end;
+ }
+
+ .btn-group .btn-link {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    border:none;
+    border-bottom: 2px solid #4BA87D;
+    font-weight:bold;
+    letter-spacing: 1px;
+ }
+ #sec-1 {
+     display:flex;
+     position:relative;
+ }
+
+ .container-button-p {
+    z-index: 3;
+    width:50%;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    align-items:space-between;
+    top:27%;
+ }
+
+ 
+}

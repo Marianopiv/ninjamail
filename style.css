@@ -4,7 +4,7 @@
 font-family: 'Raleway', sans-serif; */
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 nav {
@@ -13,6 +13,7 @@ nav {
     align-items: center;
     width:100%;
     padding: 5px 0;
+    margin-top:8px;
     
 }
 
@@ -23,7 +24,7 @@ nav div {
 }
 
 nav div img {
-    width: 160%;
+    width: 100%;
 }
 
 nav div button {
@@ -34,6 +35,11 @@ nav div button {
 
 .btn-group {
     display:none;
+}
+
+.btn1-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .btn1 {
@@ -79,7 +85,7 @@ section {
     margin: 40px auto;
 }
 #sec-1 h1 {
-    top: 5%;
+    top: 8%;
     position: absolute;
     font-family: 'Playfair Display', serif;
     font-weight:bold;
@@ -152,7 +158,6 @@ contenedor de bottones display flex y justify content  space between. AL div de 
     display:flex;
     flex-direction:column;
     background-image:url(./Assets/imagenes/Slanted\ Green\ BG.png);
-    width: 360px;
     position:relative;
 }
 
@@ -308,14 +313,80 @@ contenedor de bottones display flex y justify content  space between. AL div de 
 }
 
 .container-empresas {
-    display:grid;
-    grid-template-areas:"a a";
-
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-left:20%;
 }
 
-.container-empresas img {
-    grid-column:1;
-    width:25px;
-    height:25px;
+.container-empresas .img-cont {
+    flex-basis: calc(50% -5px);
+    width:50%;
+    height: 50%;
+    justify-self: flex-end;
+    margin-bottom:10%;
+}
+.container-empresas .img-cont img {
+    width:60%;
+}
 
+.greenSection {
+    background-color: #4BA87D;
+    height:100vw;
+}
+
+.greenSection h1 {
+    color:white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size:56px;
+    font-weight: black;
+    padding-top:20%;
+}
+
+.greenSection button {
+    background-color: white;
+    position: absolute;
+    left:27%;
+    border:none;
+    font-weight:bold;
+    padding: 14px 27px;
+    font-size: 17px;
+}
+
+footer .logo-end {
+    margin-top:53px;
+}
+footer .logo-end img {
+    width:41%;
+}
+
+.container-info {
+    display:flex;
+    width:100%;
+    gap: 70px;
+}
+.container-info li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    list-style: none;
+    font-weight:bold;
+    line-height: 20px;
+}
+
+.container-info ul {
+    padding-left: 19px;
+}
+.final {
+    display:flex;
+    flex-wrap:wrap;
+    margin-left: 19px;
+    border-top: 1px solid lightgray;
+}
+.final p {
+    font-family: 'Raleway', sans-serif;
+    font-size:9px;
+    font-weight:bold;
+    width:100%;
+    
 }

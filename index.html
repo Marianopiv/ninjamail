@@ -5,35 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./tablet.css"/>
     <title>Document</title>
   </head>
   <body>
     <nav>
-      <div>
+      <div class="logo-container">
         <img src="./Assets/imagenes/NinjaMail Logo.png" alt="" />
       </div>
-      <div>
-        <div class="btn-group">
-          <button class="btn-link">features</button>
-          <button class="btn-link">pricing</button>
-          <button class="btn-link">services</button>
-          <button class="btn-link">partners</button>
-        </div>
-      </div>
-      <div>
+     <div class="btn-group">
+       <button class="btn-link">features</button>
+       <button class="btn-link">pricing</button>
+       <button class="btn-link">services</button>
+       <button class="btn-link">partners</button>
+     </div>
+      <div class="btn1-container">
         <button class="btn1">sign up free</button>
       </div>
     </nav>
     <section id="sec-1">
-      <div><h1>create stunning email campaigns</h1></div>
-      <img src="./Assets/imagenes/section1.png" alt="section-img" />
-      <p>
+
+      <div class ="titulo-principal"><h1>create stunning email campaigns</h1></div>
+      <div class="primer-imagen"><img src="./Assets/imagenes/section1.png" alt="section-img" /></div>
+
+      <div class = "container-button-p">
+       <p>
         create and launch email campaigns that captivate your customers in just
         a few clicks.
-      </p>
-      <div class="btn-container">
+       </p>
+       <div class="btn-container">
         <button class="btn1 btn-grande">try now</button>
         <button class="btn2 btn-grande">get a demo</button>
+       </div>
       </div>
     </section>
     <section class="reach-customers">
@@ -118,14 +121,56 @@
         <h1 class="ultimo-titulo">All the best brands already use us.</h1>
       </div>
       <div class="container-empresas">
-        
-        <img src="./Assets/imagenes/empresa1.png" alt="">
-        <img src="./Assets/imagenes/empresa4.png" alt="">
-        <img src="./Assets/imagenes/empresa2.png" alt="">
-        <img src="./Assets/imagenes/empresa3.png" alt="">
-        
-        <img src="./Assets/imagenes/empresa5.png" alt="">
+        <div class="img-cont"><img src="./Assets/imagenes/empresa1.png" alt=""></div>        
+        <div class="img-cont"><img src="./Assets/imagenes/empresa4.png" alt=""></div>
+        <div class="img-cont"><img src="./Assets/imagenes/empresa2.png" alt=""></div>
+        <div class="img-cont"><img src="./Assets/imagenes/empresa3.png" alt=""></div>
+        <div class="img-cont"><img src="./Assets/imagenes/empresa5.png" alt=""></div>
       </div>
     </section>
+    <section>
+      <div class="greenSection">
+        <h1>Get started today!</h1>
+        <button class="btn2">pick a plan</button>
+      </div>
+    </section>
+    <footer>
+      <div class="logo-end"><img src="/Assets/imagenes/NinjaMail Logo.png" alt=""></div>
+
+      <div class="container-info">
+        <div class="list">
+          <ul>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Services</li>
+          <li>Partners</li>
+          <li>About Us</li>
+          <li>Tutorials</li>
+          <li>Resources</li>
+          <li>Help Center</li>
+          <li>Templates</li>
+          <li>Case Studies</li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <li>Medium</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Linkedin</li>
+            <li>Contact Us</li>
+            <li>Slack</li>
+            <li>Jobs</li>
+          </ul>
+       </div>
+      </div>
+      <div class="final">
+        <p>NinjaMail i s a sample project for Quest AI</p>
+        <p>© 2019 Quest AI, All rights reserved</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+    </footer>
   </body>
 </html>
